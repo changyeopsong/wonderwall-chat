@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="24px" viewBox="0 0 16 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>iconmonstr-mobile-thin (1)</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g filter="url(#filter-1)" id="iconmonstr-mobile-thin-(1)">
+            <g>
+                <path d="M14,24 L2,24 C0.896,24 0,23.104 0,22 L0,2 C0,0.896 0.896,0 2,0 L14,0 C15.104,0 16,0.896 16,2 L16,22 C16,23.104 15.104,24 14,24 Z M15,18.917 L1,18.917 L1,22 C1,22.552 1.449,23 2,23 L14,23 C14.552,23 15,22.552 15,22 L15,18.917 Z M8,21.917 C7.447,21.917 7,21.469 7,20.917 C7,20.365 7.447,19.917 8,19.917 C8.552,19.917 8.999,20.365 8.999,20.917 C8.999,21.469 8.552,21.917 8,21.917 Z M15,4.917 L1,4.917 L1,17.917 L15,17.917 L15,4.917 Z M14,1 L2,1 C1.449,1 1,1.449 1,2 L1,3.917 L15,3.917 L15,2 C15,1.449 14.552,1 14,1 Z" id="Shape" fill="#000000"></path>
+            </g>
+        </g>
+    </g>
+</svg>

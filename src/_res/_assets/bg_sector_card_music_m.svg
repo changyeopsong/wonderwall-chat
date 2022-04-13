@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="117" height="214" viewBox="0 0 117 214">
+    <defs>
+        <path id="cnpyhbtdja" d="M0 0L116.999 0 116.999 214 0 214 0 141.601z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(0 -656) translate(0 656)">
+                <mask id="mrgptw811b" fill="#f2f2f2">
+                    <use xlink:href="#cnpyhbtdja"/>
+                </mask>
+                <path fill="#f2f2f2" d="M123 45L123 100.133 62 214 0 214 0 82z" mask="url(#mrgptw811b)" opacity=".1"/>
+            </g>
+        </g>
+    </g>
+</svg>

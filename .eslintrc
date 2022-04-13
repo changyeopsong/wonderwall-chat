@@ -1,0 +1,77 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "tsconfig.json",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true
+  },
+  "globals": {
+    "JSX": "readonly"
+  },
+  "root": true,
+  "plugins": ["@typescript-eslint", "prettier", "react", "react-hooks"],
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript"
+  ],
+  "rules": {
+    "no-unused-vars": "off",
+    "comma-dangle": ["error", "never"],
+    "prettier/prettier": "error",
+    "react/display-name": "off",
+    "react/prop-types": "off",
+    "react/jsx-sort-props": [
+      "error",
+      {
+        "ignoreCase": true,
+        "shorthandLast": true,
+        "callbacksLast": true,
+        "reservedFirst": true
+      }
+    ],
+    "eqeqeq": "warn",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-unused-vars": ["warn", { "varsIgnorePattern": "_" }],
+    "@typescript-eslint/no-empty-interface": [
+      "warn",
+      { "allowSingleExtends": true }
+    ],
+    "no-return-await": "error"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "src"]
+      }
+    }
+  },
+  "ignorePatterns": [
+    "sitemap/",
+    "cloudfront/",
+    "eslint/",
+    "cypress/",
+    "scripts/"
+  ]
+}

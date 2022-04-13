@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>1ACE7449-F68C-449F-9C8C-2C41F8F6F830</title>
+    <g id="PC" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="04" transform="translate(-622.000000, -2239.000000)">
+            <g id="Group-3-Copy-3" transform="translate(642.000000, 2259.000000) scale(-1, 1) translate(-642.000000, -2259.000000) translate(622.000000, 2239.000000)">
+                <rect id="Rectangle" stroke="#444444" x="0.5" y="0.5" width="39" height="39"></rect>
+                <g id="Icon/arrow*2" transform="translate(10.000000, 10.000000)">
+                    <g id="caret-down" transform="translate(10.000000, 10.000000) scale(-1, 1) rotate(90.000000) translate(-10.000000, -10.000000) ">
+                        <rect id="Rectangle" x="0" y="0" width="20" height="20"></rect>
+                        <g id="Group" transform="translate(4.166667, 4.166667)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2">
+                            <polyline id="Path" points="12.5 0 6.25 6.25 0 0"></polyline>
+                            <polyline id="Path-Copy" points="12.5 6.66666667 6.25 12.9166667 0 6.66666667"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
