@@ -1,4 +1,4 @@
-import {HTMLAttributes, ComponentType} from 'react';
+import {HTMLAttributes} from 'react';
 import styled, {StyledComponent} from 'styled-components';
 
 import 'lazysizes';
