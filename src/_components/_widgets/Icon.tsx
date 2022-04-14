@@ -1,4 +1,4 @@
-import {ComponentType, HTMLAttributes} from 'react';
+import {HTMLAttributes} from 'react';
 import styled, {StyledComponent} from 'styled-components';
 
 export interface IconProps extends HTMLAttributes<HTMLImageElement> {
