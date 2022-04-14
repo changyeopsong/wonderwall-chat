@@ -3,22 +3,32 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
+        "@loadable/component": "^5.15.0",
         "@testing-library/jest-dom": "^5.14.1",
         "@testing-library/react": "^12.0.0",
         "@testing-library/user-event": "^13.2.1",
-        "@loadable/component": "^5.15.0",
+        "axios": "^0.26.1",
+        "lazysizes": "^5.2.0-beta1",
         "react": "^18.0.0",
         "react-dom": "^17.0.2",
         "react-router": "^5.0.1",
         "react-router-dom": "^5.0.1",
         "react-scripts": "5.0.0",
         "react-slick": "^0.28.1",
+        "recoil": "^0.6.1",
+        "styled-components": "^4.3.1",
         "stylelint-order": "^4.1.0",
         "typescript": "^4.4.2",
         "web-vitals": "^2.1.0",
-        "recoil": "^0.6.1",
-        "styled-components": "^4.3.1",
-        "lazysizes": "^5.2.0-beta1"
+        "retry-axios": "^1.0.1",
+        "winston": "^3.2.1",
+        "browser-lang": "^0.1.0",
+        "device-detector-js": "^2.2.9",
+        "mobile-detect": "^1.4.4",
+        "moment": "^2.27.0",
+        "moment-timezone": "^0.5.31",
+        "@sentry/react": "^6.16.1",
+        "query-string": "^6.8.1"
     },
     "scripts": {
         "start": "react-scripts start",
@@ -29,7 +39,8 @@
         "eslint": "eslint ./src --ext .ts,.tsx",
         "eslint:strings": "eslint ./src --ext .jsx,.tsx --no-eslintrc -c ./eslint/eslintConfig.json",
         "stylelint": "stylelint \"./src/**/*.{jsx,tsx}\"",
-        "stylelint:fix": "stylelint \"./src/**/*.{jsx,tsx}\" --fix"
+        "stylelint:fix": "stylelint \"./src/**/*.{jsx,tsx}\" --fix",
+        "server": "json-server --watch db.json --port 3003"
     },
     "eslintConfig": {
         "extends": [
@@ -50,7 +61,14 @@
         ]
     },
     "devDependencies": {
+        "@types/jest": "^27.0.1",
+        "@types/loadable__component": "^5.13.4",
+        "@types/node": "^16.7.13",
+        "@types/react": "^17.0.20",
+        "@types/react-dom": "^17.0.9",
         "@types/react-router-dom": "^5.1.7",
+        "@types/react-slick": "^0.23.4",
+        "@types/styled-components": "^5.1.9",
         "@typescript-eslint/eslint-plugin": "^5.8.0",
         "@typescript-eslint/parser": "^5.8.0",
         "eslint-config-prettier": "^8.3.0",
@@ -59,17 +77,12 @@
         "eslint-plugin-prettier": "^3.4.0",
         "eslint-plugin-react": "^7.23.2",
         "eslint-plugin-react-hooks": "^4.2.0",
-        "@types/jest": "^27.0.1",
-        "@types/node": "^16.7.13",
-        "@types/react": "^17.0.20",
-        "@types/react-dom": "^17.0.9",
+        "json-server": "^0.17.0",
         "prettier": "^2.5.1",
-        "@types/react-slick": "^0.23.4",
-        "@types/styled-components": "^5.1.9",
         "stylelint": "^13.13.1",
         "stylelint-config-idiomatic-order": "^8.1.0",
         "stylelint-config-recommended": "^5.0.0",
         "stylelint-config-styled-components": "^0.1.1",
-        "@types/loadable__component": "^5.13.4"
+        "axios-logger": "^2.5.0"
     }
 }

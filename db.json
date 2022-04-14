@@ -1,0 +1,40 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "title": "OUTER"
+        },
+        {
+            "id": 2,
+            "title": "TOP"
+        },
+        {
+            "id": 3,
+            "title": "BOTTOM"
+        },
+        {
+            "id": 4,
+            "title": "ACC"
+        },
+        {
+            "id": 5,
+            "title": "LIVING"
+        },
+        {
+            "id": 6,
+            "title": "MERCH"
+        },
+        {
+            "id": 7,
+            "title": "COLLAB"
+        },
+        {
+            "id": 8,
+            "title": "TECH"
+        },
+        {
+            "id": 12,
+            "title": "KIT"
+        }
+    ]
+}
