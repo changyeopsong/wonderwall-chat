@@ -4,6 +4,11 @@ import {Switch, useHistory} from 'react-router';
 import {Container, TabHeader} from './styles';
 import {TabControllerProps, TabInfo} from './types';
 import {Path} from 'Constants';
+import {TabProps, TabType} from './_components/Tab/types';
+
+function isStyledComponent(tab: FC<TabProps> | TabType): tab is TabType {
+    return (tab as TabType).styledComponentId !== undefined;
+}
 
 const TabController: FC<TabControllerProps> = ({startPath, tab, tabInfos, gutter, children}) => {
     const history = useHistory();
@@ -23,6 +28,15 @@ const TabController: FC<TabControllerProps> = ({startPath, tab, tabInfos, gutter
         setWidth(width);
     }, []);
 
+    const renderStyledComponent = useCallback(
+        (tab: TabType, text: string, path: string, key: number) => {
+            const StyledTab = tab;
+
+            return <StyledTab key={key} path={path} text={text} width={width} />;
+        },
+        [width]
+    );
+
     useEffect(() => {
         if (tabInfos && gutter) {
             calculateWidth(gutter, tabInfos);
@@ -32,7 +46,7 @@ const TabController: FC<TabControllerProps> = ({startPath, tab, tabInfos, gutter
 
     return (
         <Container>
-            <TabHeader>{React.Children.toArray(tabInfos.map(tabInfo => tab({...tabInfo, width})))}</TabHeader>
+            <TabHeader>{isStyledComponent(tab) ? tabInfos.map((tabInfo, tabIndex) => renderStyledComponent(tab, tabInfo.text, tabInfo.path, tabIndex)) : React.Children.toArray(tabInfos.map(tabInfo => tab({...tabInfo, width})))}</TabHeader>
             <Switch>{children}</Switch>
         </Container>
     );

@@ -16,7 +16,7 @@ const Tab: FC<TabProps> = ({width, text, path}) => {
     }, [path]);
 
     return (
-        <TabItem isActivated={currentPath === path.replace('/', '')} width={width} onClick={onTabItemClick}>
+        <TabItem className={'clickable'} isActivated={currentPath === path.replace('/', '')} width={width} onClick={onTabItemClick}>
             {text}
         </TabItem>
     );

@@ -1,5 +1,7 @@
-import {FC} from 'react';
-import {TabProps} from './_components/Tab/types';
+import React, {FC} from 'react';
+import {Route} from 'react-router';
+
+import {TabProps, TabType} from './_components/Tab/types';
 
 export interface TabInfo {
     text: string;
@@ -12,7 +14,7 @@ export interface TabContainerProps {
 
 export interface TabControllerProps {
     startPath?: string;
-    tab: FC<TabProps>;
+    tab: FC<TabProps> | TabType;
     tabInfos: TabInfo[];
     gutter: number;
     children: JSX.Element[] | JSX.Element | undefined;

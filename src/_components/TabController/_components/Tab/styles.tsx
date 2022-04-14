@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {TabItemProps} from './types';
 import {Color} from 'Constants';
 
-export const TabItem = styled.div.attrs(() => ({className: 'clickable'}))<TabItemProps>`
+export const TabItem = styled.div.attrs(() => ({className: `clickable`}))<TabItemProps>`
     display: flex;
     width: ${({width}) => width};
     align-items: center;
