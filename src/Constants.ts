@@ -232,7 +232,8 @@ export const Color = {
     azure: '#0091ff',
     gray: '#c4c4c4',
     grayTwo: '#3d3d3d',
-    darkGray: '#2d2d2d'
+    darkGray: '#2d2d2d',
+    Grey5: '#181818'
 };
 
 export const Dimension = {
